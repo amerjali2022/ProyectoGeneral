@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package co.edu.modelo;
+package co.edu.usa.modelo;
 
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -12,6 +13,6 @@ import org.springframework.stereotype.Repository;
  * @author JaliNet
  */
 @Repository
-public class CustomeRepository {
+public interface CategoryCrudRepository extends CrudRepository<Category,Integer> {
     
 }
