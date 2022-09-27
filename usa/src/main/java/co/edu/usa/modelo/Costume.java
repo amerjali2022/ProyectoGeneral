@@ -23,7 +23,7 @@ import javax.persistence.Table;
  * @author JaliNet
  */
 @Entity
-@Table(name="custome")
+@Table(name="costume")
 public class Costume implements Serializable {
     
     @Id
