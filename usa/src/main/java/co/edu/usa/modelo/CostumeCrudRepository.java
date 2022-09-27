@@ -8,11 +8,12 @@ package co.edu.usa.modelo;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
+
 /**
  *
  * @author JaliNet
  */
-@Repository
+
 public interface CostumeCrudRepository extends CrudRepository<Costume,Integer>{
     
 }

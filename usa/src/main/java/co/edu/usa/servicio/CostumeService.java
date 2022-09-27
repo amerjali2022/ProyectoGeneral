@@ -22,7 +22,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CostumeService {
-      @Autowired
+    @Autowired
     CostumeRepository costumeRepository;
     
   public List<Costume> getAll() {return (List<Costume>) costumeRepository.getAll();};

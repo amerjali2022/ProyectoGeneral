@@ -16,6 +16,9 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+
+
+
 /**
  *
  * @author JaliNet
@@ -46,6 +49,14 @@ public class Category implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public List<Costume> getCostumes() {
+        return costumes;
+    }
+
+    public void setCostumes(List<Costume> costumes) {
+        this.costumes = costumes;
     }
     
     

@@ -14,13 +14,16 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+//import org.hibernate.annotations.Table;
+//import org.springframework.data.relational.core.mapping.Table;
+
 
 /**
  *
  * @author JaliNet
  */
 @Entity
-@Table(name="costume")
+@Table(name="custome")
 public class Costume implements Serializable {
     
     @Id
@@ -29,7 +32,8 @@ public class Costume implements Serializable {
     private String name;
     private String brand;
     private String description;
-    private Integer year;
+    private Integer year_b;
+
     @ManyToOne
     @JoinColumn(name="idCategory")
     @JsonIgnoreProperties("costumes")
@@ -68,11 +72,11 @@ public class Costume implements Serializable {
     }
 
     public Integer getYear() {
-        return year;
+        return year_b;
     }
 
     public void setYear(Integer year) {
-        this.year = year;
+        this.year_b = year;
     }
 
     public Category getCategory() {
