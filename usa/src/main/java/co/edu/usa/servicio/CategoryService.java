@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 /**
  *
  * @author JaliNet
+ * Desarrollado para ilustrar proceso GIT-GITHUB-VM ORACLE
  */
 @Service
 public class CategoryService {
